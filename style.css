@@ -1,0 +1,300 @@
+html{
+    font-size: calc(60% + 0.8vmin);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub{
+    margin-right: 10px;
+    column-gap: 5px;
+}
+
+.second .infield .sub  input[type="text"] ,.third .infield .sub input[type="number"]{
+    max-width: 100px;
+    max-height: 20px;
+}
+
+
+h2 u{
+    text-align: center;
+    font-size: 2rem;
+}
+h3,h2{
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+    font-size: 1.5rem;
+}
+
+input,button{
+    padding: 2px 0 2px 5px;
+    font-weight: 100;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+input[type='date'], input[type='time'] ,button{
+    display:block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    min-height: 1.2em;
+}
+
+.input-field label{
+    font-weight: bold;
+}
+
+.container{
+    position: relative;
+    max-width: auto;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.container form{
+    position: relative;
+    min-height: 100%;
+    padding: 10px 0 10px 10px;
+    background-color: #f2f2f2;
+    margin-top: 16px;
+    border-radius: 10px;
+}
+
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    
+}
+form .fields .input-field label{
+    margin-bottom: .5rem;
+    font-weight: 500;
+}
+
+form .first .fields .input-field{
+    display: flex;
+    width: calc(100% / 2 - 15px);
+    flex-direction: column;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+form .first .fields .input-field:nth-child(1){
+    display: flex;
+    width: calc(70% - 15px);
+    flex-direction: column;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+form .first .fields .input-field:nth-child(2){
+    display: flex;
+    width: calc(30% - 15px);
+    flex-direction: column;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+form .first .fields .input-field:nth-child(5){
+    display: flex;
+    width: calc(100% - 15px);
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+form .first .fields .input-field:nth-child(6){
+    display: flex;
+    width: calc(60% - 15px);
+    flex-direction: column;
+    margin-right: 10px;
+}
+form .first .fields .input-field:nth-child(7){
+    display: flex;
+    width: calc(40% - 15px);
+    flex-direction: column;
+    margin-right: 10px;
+    padding-top: 20px;
+}
+
+
+form .second .fields .input-field{
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+form .second .fields .input-field:nth-child(8){
+    display: flex; 
+    width:calc(66% - 15px); 
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+form .second .fields .input-field:nth-child(18),form .third .fields .input-field:nth-child(14){
+    display: flex; 
+    width:calc(100% - 15px); 
+    flex-direction: column;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+form .third .fields .input-field{
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+form .third .fields .input-field:nth-child(1) , form .third .fields .input-field:nth-child(2)
+, form .third .fields .input-field:nth-child(3) , form .third .fields .input-field:nth-child(4)
+{
+    display: flex;
+    width: calc(100% /4 - 15px);
+    flex-direction: column;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+form .fourth .fields .input-field{
+    display: flex;
+    width: calc(100%  - 15px);
+    flex-direction: column;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+form .fourth .fields .input-field:nth-child(6),form .fourth .fields .input-field:nth-child(7)
+,form .fourth .fields .input-field:nth-child(8){
+    display: flex;
+    width: calc(100% /3 - 15px);
+    flex-direction: column;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+@media screen and (max-width: 660px) {
+    form .fourth .fields .input-field:nth-child(6),form .fourth .fields .input-field:nth-child(7){
+        display: flex;
+        width: calc(100%  - 15px);
+        flex-direction: column;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    form .fourth .fields .input-field:nth-child(8){
+        display: flex;
+        width: calc(100%  - 15px);
+        flex-direction: column;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    form .second .fields .input-field:nth-child(1){
+        display: flex; 
+        width:calc(100% - 15px); 
+        flex-direction: column;
+        margin-right: 10px;
+    }
+}
+
+
+@media screen and (max-width: 760px){
+    .second .sub:nth-child(5){
+    display: flex;
+    width: calc(100%  - 15px);
+    margin: 10px 0 0 0;
+    }
+    .third .sub:nth-child(3){
+    display: flex;
+    width: calc(100%  - 15px);
+    margin: 10px 0 0 0;
+    }
+    form .third .fields .input-field:nth-child(1) , form .third .fields .input-field:nth-child(2)
+    , form .third .fields .input-field:nth-child(3) 
+    {
+        display: flex;
+        width: calc(100% /3 - 15px);
+        flex-direction: column;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    form .third .fields .input-field:nth-child(4)
+    {
+        display: flex;
+        width: calc(100% /3 - 15px);
+        flex-direction: column;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 460px){
+    form .second .fields .input-field{
+        display: flex;
+        width: calc(100% - 15px);
+        flex-direction: column;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    form .second .fields .input-field:nth-child(8){
+        display: flex; 
+        width:calc(100% - 15px); 
+        flex-direction: column;
+        margin-right: 10px;
+    }
+    
+    form .third .fields .input-field{
+        display: flex;
+        width: calc(100%  - 15px);
+        flex-direction: column;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    form .third .fields .input-field:nth-child(1) , form .third .fields .input-field:nth-child(2)
+    , form .third .fields .input-field:nth-child(3) , form .third .fields .input-field:nth-child(4)
+    {
+        display: flex;
+        width: calc(100%  - 15px);
+        flex-direction: column;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    form .first .fields .input-field:nth-child(6){
+        display: flex;
+        width: calc(100% - 15px);
+        flex-direction: column;
+        margin-right: 10px;
+    }
+
+    form .first .fields .input-field:nth-child(6){
+        display: flex;
+        width: calc(100% - 15px);
+        flex-direction: column;
+        padding-top: 0px;
+        margin-right: 10px;
+    }
+    .sub{
+        display: flex;
+        width: calc(100%  - 15px);
+        margin-top: 10px;
+    }
+}
